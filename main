@@ -1,0 +1,26 @@
+/**
+ * converts distance in miles to kilometers.
+ *
+ */
+
+#include <stdio.h>  /**< prinf, scanf definitions */
+#include <stdlib.h>
+#define kmsPerMile 1.609 /**<  conversion constant */
+
+int main()
+{
+    double miles, /**<  input - distance in miles.*/
+        kms; /**<  output - distance in kilometers */
+
+    /**<  get the distance in miles. */
+    printf (" Enter the distance in miles> ");
+    scanf ("%if", &miles);
+
+    /**< convert the distance to kilometers. */
+    kms = kmsPerMile * miles;
+
+    /**< display the distance in kilometers. */
+    printf(" That equals %f kilometers. \n", kms );
+
+    return (0);
+}
